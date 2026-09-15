@@ -16,4 +16,4 @@ result = a*b
 
 ##print(result)
 print(a, "*", b, "=", result)
-print(a,"and",b )
+print(a,"and",b "and", c)
