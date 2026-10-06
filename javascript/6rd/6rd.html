@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>지도</title>
+</head>
+<body>
+<h1>지도열기</h1>
+
+<a href="https://www.google.com/maps" target="_blank">
+<button class="mytestbtn">지도열기</button>
+</a>
+
+<p id="demo"></p>
+
+<!-- <script>
+const cars = ["BMW", "Volvo", "Saab",
+"Ford", "Fiat", "Audi"];
+
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script> -->
+<!-- <script>
+let text = "";
+
+for (let i = 0; i <= 100; i += 5) {
+  text += "The number is " + i + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script> -->
+
+<script>
+let text = "";
+
+for (let i = 10; i >= 1; i--) {
+    if (i == 3) {
+        continue;
+    }
+
+    text += i * 1 + "<br>";
+}
+
+document.getElementById("demo").innerHTML = text;
+</script>
+
+
+<!-- <script>
+let firstName = "구";
+let lastName = "현모";
+
+let text = `Welcome ${firstName},
+${lastName}!`;
+
+document.getElementById("demo").innerHTML = text;
+</script> -->
+<!-- <script>
+let price = 11;
+let VAT = 0.25;
+let total = `Total: ${(price
+* (1 + VAT)).toFixed(3)}`;
+
+document.getElementById("demo").innerHTML = total;
+</script> -->
+</body>
+</html>
