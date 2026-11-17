@@ -1,0 +1,166 @@
+
+# def para_func(*para):
+#     result = 0
+
+#     for num in para:
+#         result = result + num
+
+#     return result
+
+
+# hap = 0
+
+
+
+# hap = para_func(10, 20)
+# print("매개변수가 2개인 함수를 호출한 결과 ==> %d" % hap)
+
+# hap = para_func(10, 20, 30)
+# print("매개변수가 3개인 함수를 호출한 결과 ==> %d" % hap)
+
+
+
+# def dic_func(**para):
+#     for k in para.keys():
+#         print("%s --> %d명입니다." % (k, para[k]))
+
+
+# dic_func(트와이스=9, 소녀시대=7, 걸스데이=4, 블랙핑크=4)
+
+
+
+# import random
+
+
+
+# def getNumber():
+#     return random.randrange(1, 46)
+
+
+
+# lotto = []
+# num = 0
+
+
+
+# print("** 로또 추첨을 시작합니다. ** \n")
+
+# while True:
+#     num = getNumber()
+
+#     if lotto.count(num) == 0:
+#         lotto.append(num)
+
+#     if len(lotto) >= 6:
+#         break
+
+
+# print("추첨된 로또 번호 ==> ", end='')
+
+# lotto.sort()
+
+# for i in range(0, 6):
+#     print("%d " % lotto[i], end='')
+
+
+# from tkinter import *
+
+# window = Tk()
+
+
+
+# window.mainloop()
+
+
+# from tkinter import *
+
+# window = Tk()
+# window.title("윈도창 연습")
+# window.geometry("400x100")
+# window.resizable(width = FALSE, height = FALSE)
+
+# window.mainloop()
+
+
+# from tkinter import *
+
+# window = Tk()
+
+# label1 = Label(window, text = "COOKBOOK~~ Python을")
+# label2 = Label(window, text = "림버스", font = ("궁서체", 30), fg = "blue")
+# label3 = Label(window, text = "컴퍼니", bg = "magenta", width = 20, height = 5,
+#                anchor = SE)
+
+# label1.pack()
+# label2.pack()
+# label3.pack()
+
+# window.mainloop()
+
+
+# from tkinter import *
+
+# window = Tk()
+
+# photo = PhotoImage(file="C:/Users/Admin/Documents/20261448_is_python/python/img/Roza.png")
+# label1 = Label(window, image=photo)
+
+# label1.pack()
+
+# window.mainloop()
+
+# from tkinter import *
+# from tkinter import messagebox
+
+
+# def myFunc() :
+#     messagebox.showinfo("아 이게 혈귀지")
+
+
+# window = Tk()
+
+# photo = PhotoImage(file = "C:/Users/Admin/Documents/20261448_is_python/python/img/Roza.png")
+# button1 = Button(window, image = photo, command = myFunc)
+
+# button1.pack()
+
+# window.mainloop()
+
+
+
+from tkinter import *
+from tkinter import messagebox
+
+window = Tk()
+
+def myFunc1():
+    if chk1.get() == 1:
+        messagebox.showinfo("", "파이썬  눌렀어요.")
+    else:
+        messagebox.showinfo("", "파이썬  껐어요.")
+
+def myFunc2():
+    if chk2.get() == 1:
+        messagebox.showinfo("", "CTT  눌렀어요.")
+    else:
+        messagebox.showinfo("", "CTT 껐어요.")
+
+def myFunc3():
+    if chk3.get() == 1:
+        messagebox.showinfo("", "JavaScript  눌렀어요.")
+    else:
+        messagebox.showinfo("", "JavaScript 껐어요.")
+
+chk1 = IntVar()
+chk2 = IntVar()
+chk3 = IntVar()
+
+cb1 = Checkbutton(window, text="파이썬", variable=chk1, command=myFunc1)
+cb2 = Checkbutton(window, text="CTT", variable=chk2, command=myFunc2)
+cb3 = Checkbutton(window, text="JavaScript", variable=chk3, command=myFunc3)
+
+cb1.pack()
+cb2.pack()
+cb3.pack()
+
+window.mainloop()
